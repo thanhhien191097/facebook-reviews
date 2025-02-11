@@ -5,33 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Reviews</title>
     <style>
-        /* Fixed Outer Box - FORCES SCROLL */
+        /* OUTER SCROLL CONTAINER */
         .reviews-outer-container {
             width: 500px;
-            height: 800px; /* Keeps the section compact */
+            height: 800px;
             border: 2px solid #1877F2;
             border-radius: 10px;
             background: #fff;
             margin: 20px auto;
             padding: 10px;
-            overflow-y: auto; /* Enables scrolling */
+            overflow-y: scroll; /* FORCES SCROLLBAR */
             display: flex;
             flex-direction: column;
             gap: 15px;
             scrollbar-width: thin;
         }
 
-        /* Facebook Post Container */
+        /* FACEBOOK IFRAME CONTAINER */
         .fb-wrapper {
             width: 100%;
-            height: 400px; /* Each post stays within its box */
+            height: 400px;
             overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        /* Facebook Iframe Fix */
+        /* FORCE FACEBOOK IFRAME TO FIT CONTAINER */
         .fb-wrapper iframe {
             width: 100%;
             height: 100%;
@@ -51,4 +51,8 @@
         </div>
 
         <div class="fb-wrapper">
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fanh.nguyett2311%2Fposts%2F599209612435310?ref=embed
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fanh.nguyett2311%2Fposts%2F599209612435310?ref=embed_post&show_text=true&width=500" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+    </div>
+</body>
+</html>
