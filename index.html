@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Reviews</title>
     <style>
-        /* Fixed Outer Box */
+        /* Fixed Outer Box - FORCES SCROLL */
         .reviews-outer-container {
             width: 500px;
             height: 800px; /* Keeps the section compact */
@@ -14,17 +14,7 @@
             background: #fff;
             margin: 20px auto;
             padding: 10px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Scrollable Review Section */
-        .scrollable-reviews {
-            width: 100%;
-            height: 100%;
-            overflow-y: scroll; /* Enables scrolling */
+            overflow-y: auto; /* Enables scrolling */
             display: flex;
             flex-direction: column;
             gap: 15px;
@@ -34,7 +24,7 @@
         /* Facebook Post Container */
         .fb-wrapper {
             width: 100%;
-            height: 400px;
+            height: 400px; /* Each post stays within its box */
             overflow: hidden;
             display: flex;
             justify-content: center;
@@ -52,19 +42,13 @@
 </head>
 <body>
     <div class="reviews-outer-container">
-        <div class="scrollable-reviews">
-            <div class="fb-wrapper">
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fla.chaeri%2Fposts%2Fpfbid024N7zKyc8LoStWbbAJZmcCjn6xpiw6o8P4oF9fhM94e9dziqsbHiaYi5zgC3PcZb6l&show_text=true&width=500" frameborder="0" allowfullscreen="true"></iframe>
-            </div>
-
-            <div class="fb-wrapper">
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fnghkhlinh%2Fposts%2Fpfbid0qcSYbJnaVbKmACcC9BCvqZnkgyC9TykT7YhBDmYsoXL3fq6PDTwLc9gtLA855Jfsl&show_text=true&width=500" frameborder="0" allowfullscreen="true"></iframe>
-            </div>
-
-            <div class="fb-wrapper">
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fanh.nguyett2311%2Fposts%2F599209612435310?ref=embed_post&show_text=true&width=500" frameborder="0" allowfullscreen="true"></iframe>
-            </div>
+        <div class="fb-wrapper">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fla.chaeri%2Fposts%2Fpfbid024N7zKyc8LoStWbbAJZmcCjn6xpiw6o8P4oF9fhM94e9dziqsbHiaYi5zgC3PcZb6l&show_text=true&width=500" frameborder="0" allowfullscreen="true"></iframe>
         </div>
-    </div>
-</body>
-</html>
+
+        <div class="fb-wrapper">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fnghkhlinh%2Fposts%2Fpfbid0qcSYbJnaVbKmACcC9BCvqZnkgyC9TykT7YhBDmYsoXL3fq6PDTwLc9gtLA855Jfsl&show_text=true&width=500" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+
+        <div class="fb-wrapper">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fanh.nguyett2311%2Fposts%2F599209612435310?ref=embed
