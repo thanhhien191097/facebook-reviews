@@ -14,30 +14,21 @@
             background: #fff;
             margin: 20px auto;
             padding: 10px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* INNER SCROLLABLE DIV */
-        .scrollable-reviews {
-            width: 100%;
-            height: 100%;
-            overflow-y: scroll; /* Forces scrolling */
+            overflow-y: scroll; /* Enables scrolling */
             display: flex;
             flex-direction: column;
             gap: 15px;
             scrollbar-width: thin;
         }
 
-        /* FACEBOOK IFRAME WRAPPER */
+        /* FACEBOOK IFRAME CONTAINER */
         .fb-wrapper {
             width: 100%;
             height: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
 
         /* FACEBOOK IFRAMES */
@@ -46,11 +37,20 @@
             height: 100%;
             border: none;
             display: block;
+            position: relative;
+            z-index: 2; /* Forces it to load */
         }
     </style>
 </head>
 <body>
     <div class="reviews-outer-container">
-        <div class="scrollable-reviews">
-            <div class="fb-wrapper">
-                <iframe src="https://www.facebook.com/plugins/post.ph
+        <div class="fb-wrapper">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fla.chaeri%2Fposts%2Fpfbid024N7zKyc8LoStWbbAJZmcCjn6xpiw6o8P4oF9fhM94e9dziqsbHiaYi5zgC3PcZb6l&show_text=true&width=500" allowfullscreen></iframe>
+        </div>
+
+        <div class="fb-wrapper">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fnghkhlinh%2Fposts%2Fpfbid0qcSYbJnaVbKmACcC9BCvqZnkgyC9TykT7YhBDmYsoXL3fq6PDTwLc9gtLA855Jfsl&show_text=true&width=500" allowfullscreen></iframe>
+        </div>
+
+        <div class="fb-wrapper">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%
